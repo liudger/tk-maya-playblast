@@ -21,8 +21,8 @@ from tank import Hook
 
 PLAYBLAST_WINDOW = "Playblast Window"
 
-DEFAULT_WIDTH = 720
-DEFAULT_HEIGHT = 540
+DEFAULT_WIDTH = 1920
+DEFAULT_HEIGHT = 1080
 
 MODEL_EDITOR_PARAMS = {
     "activeView": True,
