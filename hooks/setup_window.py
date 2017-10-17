@@ -150,7 +150,7 @@ class SetupWindow(Hook):
 
                 # Find first camera matching pattern and set as active camera
                 # if not use default current active camera
-                camera_name_pattern = app.get_setting( "camera_name_pattern", "persp" )
+                camera_name_pattern = app.get_setting( "camera_name_pattern", ":?(SH[a-zA-Z0-9_]+)$" )
                 cameraList = [c.name() for c in pm.ls(type="camera", r=True) if re.search( camera_name_pattern, c.name() )]
                 if not "cam" in MODEL_EDITOR_PARAMS.keys() and cameraList:
                     MODEL_EDITOR_PARAMS["cam"] = cameraList[0]
